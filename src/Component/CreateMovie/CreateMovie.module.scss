@@ -26,16 +26,20 @@ html, body{
     overflow: hidden;
     border-radius: 10px;
    &__field {
-    margin: 10px;
+    margin: 30px;
     display: flex;
     &__label{
-        width: 180px;
+        margin: auto;
+        width: 20%;
+        padding-left: 100px;
     }
     &__input{
-        width: 120px;
+        width: 85%;
+        height: 40px;
     }
    }
    &__button{
-       padding: 25px;
+    padding: 20px;
+    width: 10%;
    }
 }
