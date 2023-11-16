@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Styles from './CreateMovie.module.scss';
-import MovieType from '../../Interface/Movie';
 
 const CreateMovie = (props:any) => {
     const {handleSubmit} = props;

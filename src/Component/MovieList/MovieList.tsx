@@ -1,6 +1,5 @@
 import React from 'react';
 import Styles from './MovieList.module.scss';
-import MovieType from '../../Interface/Movie';
 
 const MovieList = (props: any) => {
     const {movie , handleDelete } = props;
