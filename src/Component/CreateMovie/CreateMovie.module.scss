@@ -25,10 +25,17 @@ html, body{
     padding: 20px;
     overflow: hidden;
     border-radius: 10px;
-   &__input {
+   &__field {
     margin: 10px;
+    display: flex;
     &__label{
-        width: 80px;
+        width: 180px;
     }
+    &__input{
+        width: 120px;
+    }
+   }
+   &__button{
+       padding: 25px;
    }
 }
