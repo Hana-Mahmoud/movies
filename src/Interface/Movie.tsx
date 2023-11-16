@@ -13,7 +13,7 @@ interface MovieType{
  /**
   * stdReleaseDate
   */
- stdReleaseDate: string;
+ stdReleaseDate?: string;
  /**
   * stdImg
   */
@@ -22,6 +22,14 @@ interface MovieType{
   * stdId
   */
  stdId: number;
+ /**
+  * stdTime
+  */
+ stdTime?: string;
+ /**
+  * stdGenre
+  */
+ stdGenre: string;
 }
 
 export default MovieType;

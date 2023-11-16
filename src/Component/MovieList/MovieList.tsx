@@ -16,8 +16,8 @@ return (
       <img className={Styles.movie_card__section__header__image} src={movie.stdImg} alt=''/>
       <h1>{movie.stdTitle}</h1>
       <h4>{movie.stdReleaseDate}</h4>
-      <span className={Styles.movie_card__section__header__minutes}>134 min</span>
-      <p className={Styles.movie_card__section__header__type}>Action, Adventure, Sci-Fi</p>
+      <span className={Styles.movie_card__section__header__minutes}>{movie.stdTime}</span>
+      <p className={Styles.movie_card__section__header__type}>{movie.stdGenre}</p>
     </div>
     <div className={Styles.movie_card__section__desc}>
       <p className={Styles.movie_card__section__desc__text}>

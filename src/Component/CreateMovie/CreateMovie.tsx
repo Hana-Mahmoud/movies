@@ -7,16 +7,18 @@ const CreateMovie = (props:any) => {
     const [stdOpeningText, setText] = useState('');
     const [stdImg, setImage] = useState('');
     const [stdReleaseDate, setDate] = useState('');
+    const [stdTime, setTime] = useState('');
+    const [stdGenre, setGenre] = useState('');
 
     const handleMovieSubmit = (e: any) => {
         e.preventDefault();
-        const newMovie = { stdTitle, stdOpeningText, stdImg, stdReleaseDate };  
+        const newMovie = { stdTitle, stdOpeningText, stdImg, stdReleaseDate, stdTime, stdGenre };  
         handleSubmit(newMovie);
       }
 return (
     <>
     <div className={Styles.form_container}>
-      <h2>Add a New Movie</h2>
+      <h2 className={Styles.form_container__headline}>Add a New Movie</h2>
       <form onSubmit={handleMovieSubmit}>
         <div className={Styles.form_container__field}>
         <label  className={Styles.form_container__field__label}>Movie poster:</label>
@@ -55,6 +57,26 @@ return (
           required 
          value={stdReleaseDate}
          onChange={(e) => setDate(e.target.value)}
+        />
+        </div>
+        <div className={Styles.form_container__field}>
+        <label  className={Styles.form_container__field__label}>Movie duration:</label>
+        <input 
+          type="text" 
+          className={Styles.form_container__field__input}
+          required 
+         value={stdTime}
+         onChange={(e) => setTime(e.target.value)}
+        />
+        </div>
+        <div className={Styles.form_container__field}>
+        <label  className={Styles.form_container__field__label}>Movie type:</label>
+        <input 
+          type="text" 
+          className={Styles.form_container__field__input}
+          required 
+         value={stdGenre}
+         onChange={(e) => setGenre(e.target.value)}
         />
         </div>
         <button className={Styles.form_container__button}>Add Movie</button>
