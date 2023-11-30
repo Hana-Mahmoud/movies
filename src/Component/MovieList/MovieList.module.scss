@@ -20,7 +20,7 @@ html, body{
     display: flex;
     flex-direction: column;
     width: 31.5%;
-    margin: 100px 12px 0px 15px;
+    margin: 20px 12px 0px 15px;
     overflow: hidden;
     border-radius: 10px;
     transition: all 0.2s;
@@ -76,12 +76,26 @@ html, body{
     }
     
   }
+  &__category{
+    margin: 5px 0px 10px 25px;
+    &__select{
+      padding: 8px;
+    }
+  }
   &__button{
     background-color: #0e0101;
     cursor: pointer;
     padding: 15px;
     color: white;
     font-size: 16px;
+    &__edit{
+    background-color: #0e0101;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+      float: right;
+    }
   }
  
 }

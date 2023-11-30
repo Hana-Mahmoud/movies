@@ -9,10 +9,11 @@ const CreateMovie = (props:any) => {
     const [stdReleaseDate, setDate] = useState('');
     const [stdTime, setTime] = useState('');
     const [stdGenre, setGenre] = useState('');
+    const [stdCategory, setCategory] = useState('');
 
     const handleMovieSubmit = (e: any) => {
         e.preventDefault();
-        const newMovie = { stdTitle, stdOpeningText, stdImg, stdReleaseDate, stdTime, stdGenre };  
+        const newMovie = { stdTitle, stdOpeningText, stdImg, stdReleaseDate, stdTime, stdGenre, stdCategory };  
         handleSubmit(newMovie);
       }
 return (
@@ -79,6 +80,20 @@ return (
          onChange={(e) => setGenre(e.target.value)}
         />
         </div>
+        <div className={Styles.form_container__field}>
+            <label className={Styles.form_container__field__label}>Movie category:</label>
+            <select
+              className={Styles.form_container__field__input}
+              required
+              value={stdCategory}
+              onChange={(e) => setCategory(e.target.value)}
+            >
+              <option value="" disabled>Select a category</option>
+              <option value="Watched">Watched</option>
+              <option value="Want to Watch">Want to Watch</option>
+              <option value="Currently Watching">Currently Watching</option>
+            </select>
+          </div>
         <button className={Styles.form_container__button}>Add Movie</button>
       </form>
     </div>

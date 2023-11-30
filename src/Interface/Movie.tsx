@@ -30,6 +30,12 @@ interface MovieType{
   * stdGenre
   */
  stdGenre: string;
+  /**
+  * stdCategory
+  */
+  stdCategory: string;
+
 }
+
 
 export default MovieType;
