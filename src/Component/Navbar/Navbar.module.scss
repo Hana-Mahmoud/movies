@@ -1,0 +1,30 @@
+.navbar {
+    background-color: black;
+    box-shadow: inset 10px 14px 53px 22px rgb(66, 6, 6);
+    padding: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    &__title {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  
+    &__links {
+      display: flex;
+  
+      &__link {
+        color: white;
+        text-decoration: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 18px;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
